@@ -107,7 +107,7 @@ namespace RVTR.Media.Service.Controllers
     {
       Regex FileExtensionRegex = new Regex(@"([a-zA-Z0-9\s_\.-:])+\.(png|jpg)$");
 
-      if(!files.Any())
+      if (!files.Any())
       {
         return BadRequest("No files given");
       }
